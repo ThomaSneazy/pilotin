@@ -1,0 +1,220 @@
+* a{
+  text-decoration: none;
+  color: white;
+}
+
+body{
+  height: 900vh;
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(89.16deg, #072038 1.27%, #0A355F 99.82%);
+}
+
+/* / *********** Ici commence le CSS navbar **************** */
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.navbar-container{
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 8vh;
+  padding-top: 10px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.navbar-container ul li {
+  filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.1));
+  border-radius: 25px;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.navbar-container ul li:hover{
+  border-radius: 25px;
+  background-color: #A0BDC0;
+  transition: 1.2s ease;
+}
+
+button {
+  font-family: 'Outfit';
+  font-size: 16px;
+  padding: 12px 16px;
+  background: #26C1D9;
+  border: 1px solid #26C1D9;
+  border-radius: 30px;
+  margin: 10px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+button{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button:after {
+  align-items: center;
+  content: '➝';
+  position: absolute;
+  opacity: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover{
+  background-color: #56CFE2;
+  padding-right: 30px;
+  padding-left:8px;
+}
+
+button:hover:after {
+  opacity: 1;
+  right: 5px;
+}
+
+
+/* / ********** Ici commence le CSS du main container *********** */
+
+.main-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 2vh;
+  padding-left: 12vh;
+  height: 90vmin;
+}
+
+.text-img{
+  padding-top: 12vh;
+}
+
+.data-center-img{
+  padding-top: 14vh;
+  margin-right: 9vh;
+}
+
+.logo-partner{
+  padding: 0px 12px 0px 12px;
+}
+
+.logo-partner img{
+  margin: 0px 10px 30px 0px;
+}
+
+.bnp{
+  margin-right: 16px;
+}
+
+.contact{
+  margin: 20px 0px 20px 0px;
+  border: none;
+  background-color: #FD7762;
+}
+.contact:hover{
+  background-color: #f98d7c;
+}
+
+
+
+/* / ********* Ici commence le CSS du texte en scroll infini ************/
+
+.scroll-text {
+  margin: 10px 0px 10px 0px;
+  overflow: hidden;
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #26C1D9;
+  width: 100%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  transform: rotate(-3.5deg);
+}
+
+.txt {
+  white-space: nowrap;
+  font-size: 160px;
+  animation: scrollTxt 50s linear infinite;
+  font-size: 160px;
+  line-height: 160px;
+  letter-spacing: -2px;
+}
+
+.bg-data{
+  -webkit-text-stroke: 3px #26C1D9;
+  color: transparent;
+}
+
+@keyframes scrollTxt {
+  0%{
+    transform: translate(-100%, 0);
+  }
+  100% {
+    transform: translate(0%, 0);
+  }
+}
+
+/* / ********* Ici commence le CSS du milieu de page paragraphe ********** */
+
+.para-middle{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 826px;
+  background-color: white;
+  padding-top: 20vh;
+  clip-path: polygon(0 9%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.title-para{
+  width: 439px;
+  height: 120px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.txt-para{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 519px;
+  height: 384px;
+  font-size: 18px;
+}
+
+.btn-discover{
+  margin: inherit;
+  margin-top: 30px;
+  background-color: #26C1D9;
+}
+
+.computer{
+  position: absolute;
+  width: 1062px;
+  height: 423px;
+  left: 189px;
+  top: 1803px;
+}
+
+.parallax-logo{
+  z-index: -1;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  right: 0;
+}
