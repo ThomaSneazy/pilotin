@@ -216,14 +216,14 @@ button:hover:after {
 }
 
 .parallax-logo{
-  /* z-index: -1;
+  z-index: -1;
   position: absolute;
   margin: 0;
   padding: 0;
-  right: 0; */
+  right: 0;
 }
 
-#image-to-scale {
+/* #image-to-scale {
   z-index: -1;
   margin: 0;
   padding: 0;
@@ -231,4 +231,4 @@ button:hover:after {
   top: 2px;
   will-change: transform;
   transition: transform 300ms linear, filter 300ms linear;
-}
+} */
