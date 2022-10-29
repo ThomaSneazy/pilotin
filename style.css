@@ -10,9 +10,6 @@ body{
   padding: 0;
   background: linear-gradient(89.16deg, #072038 1.27%, #0A355F 99.82%);
 
-  overflow: auto;
-    perspective: 1px;
-    transform-style: preserve-3d;
 }
 
 /* / *********** Ici commence le CSS navbar **************** */
@@ -207,14 +204,6 @@ button:hover:after {
   background-color: #26C1D9;
 }
 
-.computer{
-  position: absolute;
-  width: 1062px;
-  height: 423px;
-  left: 189px;
-  top: 1803px;
-}
-
 .parallax-logo{
   z-index: -1;
   position: absolute;
@@ -223,12 +212,105 @@ button:hover:after {
   right: 0;
 }
 
-/* #image-to-scale {
-  z-index: -1;
+/* Ici commence le CSS du container checkboard */
+
+.computer{
+  width: 1062px;
+  height: 423px;
+}
+
+.container-checkboard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 34vmin;
+}
+
+.container-checkboard h1{
+  padding-top: 6vmin;
+  color: white;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.checkboard-icon{
+  margin-top: 10vh;
+  background-color: #FFFF;
+  width: 1280px;
+  height: 784px;
+  border-radius: 25px;
+  padding: 0px;
+  gap: 16px;
+}
+
+.checkboard-icon{
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-checkboard h2{
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.menu-checkboard p{
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 24px;
+  width: 80%;
+}
+
+.menu-checkboard ul{
   margin: 0;
   padding: 0;
-  position: sticky;
-  top: 2px;
-  will-change: transform;
-  transition: transform 300ms linear, filter 300ms linear;
-} */
+}
+
+.menu-checkboard li{
+  width: 80%;
+  margin-top: 4vmin;
+  list-style-type: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 10px 0px 10px 0px;
+
+}
+
+.menu-checkboard li:hover{
+  background-color: #EFFDFF;
+  border-radius: 10px;
+  transition: 1.1s ease;
+}
+
+.menu-checkboard{
+  width: 50%;
+}
+ /* Ici commence le CSS container Propilot */
+
+ .container-propilot{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  margin-top: 10vh;
+  background-color: #FFFF;
+  width: 1280px;
+  height: 808px;
+  border-radius: 25px;
+  padding: 0px;
+  gap: 16px;
+  background-image: url('images/Ellipse\ 20.png');
+  background-repeat: no-repeat;
+  background-position: right;
+ }
+
+ .menu-propilot{
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: flex-start;
+ }
