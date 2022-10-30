@@ -4,11 +4,12 @@
 }
 
 body{
-  height: 900vh;
   font-family: 'Outfit', sans-serif;
   margin: 0;
   padding: 0;
   background: linear-gradient(89.16deg, #072038 1.27%, #0A355F 99.82%);
+  color: #072038;
+  overflow-x: hidden;
 
 }
 
@@ -307,10 +308,44 @@ button:hover:after {
  }
 
  .menu-propilot{
-  padding: 25px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
   align-items: flex-start;
+ }
+
+ /* Ici commence le CSS du dernier container */
+
+ .container-white{
+  width: 100%;
+  height: 826px;
+  background-color: white;
+  padding-top: 20vh;
+  clip-path: polygon(0 9%, 100% 0%, 100% 100%, 0% 100%);
+  background-image: url('images/Ellipse\ 24.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: 100%;
+ }
+
+ .title-container-white{
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+  align-items: center;
+  text-align: center;
+ }
+
+/* CAROUSEL */
+
+ .carousel{
+  margin: 0 auto;
+  width: 1280px;
+  height: 600px;
+  background: linear-gradient(90deg, rgba(7,31,54,0) 0%, rgba(7,31,55,1) 51%, rgba(7,32,56,1) 100%), url('images/Casclient-Exki.jpeg');;
+  border-radius: 25px;
+  background-size: contain;
+  background-position: -80%;
+
  }
