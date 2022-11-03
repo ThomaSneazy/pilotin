@@ -319,14 +319,14 @@ button:hover:after {
 
  .container-white{
   width: 100%;
-  height: 826px;
+  /* height: 826px; */
   background-color: white;
   padding-top: 20vh;
   clip-path: polygon(0 9%, 100% 0%, 100% 100%, 0% 100%);
   background-image: url('images/Ellipse\ 24.svg');
   background-repeat: no-repeat;
   background-position: right;
-  background-position-y: 100%;
+  background-position-y: 20%;
  }
 
  .title-container-white{
@@ -347,5 +347,61 @@ button:hover:after {
   border-radius: 25px;
   background-size: contain;
   background-position: -80%;
+ }
 
+ /* Ici commence le CSS des articles */
+
+ .article{
+  align-items: center;
+  text-align: center;
+  margin-bottom: 14vh;
+ }
+
+ .article p{
+  display: inline-flex;
+  margin: auto 0;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 24px;
+  width: 60%;
+ }
+
+.card-container{
+  display: flex;
+  padding: 32px 24px;
+  gap: 24px;
+}
+
+ .card-article{
+  margin-top: 20px;
+  width: 410.67px;
+  height: 440px;
+  border: 1px solid #A0BDC0;
+  border-radius: 15px;
+  padding: 32px 24px;
+ }
+
+ .card-article p{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+ }
+
+ .card-article h3{
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: initial;
+  text-overflow: ellipsis;
+  max-width: 150ch;
+ }
+
+ /* Ici commence le CSS container demo */
+
+ .container-demo{
+  width: 1280px;
+  height: 498px;
+  margin: 0 auto;
+  background: #072038;
+  border: 1px solid #A0BDC0;
+  border-radius: 10px;
  }
