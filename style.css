@@ -15,12 +15,12 @@ body{
 
 /* / *********** Ici commence le CSS navbar **************** */
 
-.arrow {
+/* .arrow {
   border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
-}
+} */
 
 .navbar-container{
   font-size: 16px;
@@ -322,11 +322,11 @@ button:hover:after {
   /* height: 826px; */
   background-color: white;
   padding-top: 20vh;
-  clip-path: polygon(0 9%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 4%, 100% 0%, 100% 100%, 0% 100%);
   background-image: url('images/Ellipse\ 24.svg');
   background-repeat: no-repeat;
   background-position: right;
-  background-position-y: 20%;
+  background-position-y: 5%;
  }
 
  .title-container-white{
@@ -379,9 +379,69 @@ button:hover:after {
   border: 1px solid #A0BDC0;
   border-radius: 15px;
   padding: 32px 24px;
+  text-align: start;
  }
 
  .card-article p{
+  width: 100%;
+ }
+
+ .test{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+.button{
+  border: #072038 1px solid;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.button:hover{
+  color: #FFFF;
+  background-color: #072038;
+  transition: .70s ease;
+}
+
+.arrow{
+  margin: 0;
+  position: relative;
+    margin: 0;
+    top: 28%;
+    left: 36%;
+}
+
+.avatar{
+  background-image: url('https://cdn-icons-png.flaticon.com/512/805/805385.png');
+  border: #072038 1px solid;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: fill;
+  margin-top: inherit;
+}
+
+ .categorie{
+  color: #26C1D9;
+  border: #26C1D9 solid 1px;
+  background-color: #FFFF;
+  border-radius: 5px;
+ }
+
+ .categorie:hover{
+  color: #FFFF;
+  background-color: #26C1D9;
+ }
+
+ .card-article:hover{
+  background-color: #F0FDFF;
+  border: none;
+ }
+
+ /* .card-article p{
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -393,7 +453,7 @@ button:hover:after {
   text-align: initial;
   text-overflow: ellipsis;
   max-width: 150ch;
- }
+ } */
 
  /* Ici commence le CSS container demo */
 
@@ -404,4 +464,65 @@ button:hover:after {
   background: #072038;
   border: 1px solid #A0BDC0;
   border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
  }
+
+ .container-demo h1{
+  font-size: 48px;
+  color: #26C1D9;
+ }
+
+ .container-demo h2{
+  font-size: 36px;
+ }
+
+.text-demo{
+  width: 50%;
+  margin: auto;
+}
+
+ .container-footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 436px;
+  background: #FFFFFF;
+
+}
+
+.container-footer h3{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: #156B79;
+}
+
+.container-footer ul, li{
+  list-style-type: none;
+  padding: 0;
+}
+
+.info-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.fa-brands{
+  color: #072038;
+  border: 1px solid black;
+  padding: 12px;
+  border-radius: 50%;
+  margin-right: 1vh;
+}
+
+.fa-brands:hover{
+  color: white;
+  background-color: #072038;
+  transition: .75s ease;
+}
